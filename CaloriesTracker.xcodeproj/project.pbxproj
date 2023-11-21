@@ -13,6 +13,9 @@
 		D830B2E82B0BAC410014DD4A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D830B2E72B0BAC410014DD4A /* Preview Assets.xcassets */; };
 		D830B2F12B0D17A00014DD4A /* FoodModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D830B2EF2B0D17A00014DD4A /* FoodModel.xcdatamodeld */; };
 		D830B2F32B0D19090014DD4A /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D830B2F22B0D19090014DD4A /* DataController.swift */; };
+		D830B2F62B0D1E850014DD4A /* AddFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D830B2F52B0D1E840014DD4A /* AddFoodView.swift */; };
+		D830B2FA2B0D21750014DD4A /* TimeFormatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = D830B2F92B0D21750014DD4A /* TimeFormatting.swift */; };
+		D830B2FC2B0D2EA30014DD4A /* EditFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D830B2FB2B0D2EA30014DD4A /* EditFoodView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +26,9 @@
 		D830B2E72B0BAC410014DD4A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D830B2F02B0D17A00014DD4A /* FoodModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FoodModel.xcdatamodel; sourceTree = "<group>"; };
 		D830B2F22B0D19090014DD4A /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		D830B2F52B0D1E840014DD4A /* AddFoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFoodView.swift; sourceTree = "<group>"; };
+		D830B2F92B0D21750014DD4A /* TimeFormatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeFormatting.swift; sourceTree = "<group>"; };
+		D830B2FB2B0D2EA30014DD4A /* EditFoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditFoodView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +45,7 @@
 		D830B2D42B0BAC3F0014DD4A = {
 			isa = PBXGroup;
 			children = (
+				D830B2E02B0BAC3F0014DD4A /* CaloriesTrackerApp.swift */,
 				D830B2DF2B0BAC3F0014DD4A /* CaloriesTracker */,
 				D830B2DE2B0BAC3F0014DD4A /* Products */,
 			);
@@ -55,9 +62,9 @@
 		D830B2DF2B0BAC3F0014DD4A /* CaloriesTracker */ = {
 			isa = PBXGroup;
 			children = (
+				D830B2F72B0D21580014DD4A /* Model */,
+				D830B2F42B0D1E650014DD4A /* View */,
 				D830B2EE2B0D16F70014DD4A /* DataModel */,
-				D830B2E02B0BAC3F0014DD4A /* CaloriesTrackerApp.swift */,
-				D830B2E22B0BAC3F0014DD4A /* ContentView.swift */,
 				D830B2E42B0BAC410014DD4A /* Assets.xcassets */,
 				D830B2E62B0BAC410014DD4A /* Preview Content */,
 			);
@@ -79,6 +86,24 @@
 				D830B2F22B0D19090014DD4A /* DataController.swift */,
 			);
 			path = DataModel;
+			sourceTree = "<group>";
+		};
+		D830B2F42B0D1E650014DD4A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D830B2E22B0BAC3F0014DD4A /* ContentView.swift */,
+				D830B2F52B0D1E840014DD4A /* AddFoodView.swift */,
+				D830B2FB2B0D2EA30014DD4A /* EditFoodView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D830B2F72B0D21580014DD4A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D830B2F92B0D21750014DD4A /* TimeFormatting.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,10 +176,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D830B2F62B0D1E850014DD4A /* AddFoodView.swift in Sources */,
 				D830B2E32B0BAC3F0014DD4A /* ContentView.swift in Sources */,
 				D830B2F32B0D19090014DD4A /* DataController.swift in Sources */,
 				D830B2E12B0BAC3F0014DD4A /* CaloriesTrackerApp.swift in Sources */,
 				D830B2F12B0D17A00014DD4A /* FoodModel.xcdatamodeld in Sources */,
+				D830B2FC2B0D2EA30014DD4A /* EditFoodView.swift in Sources */,
+				D830B2FA2B0D21750014DD4A /* TimeFormatting.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
